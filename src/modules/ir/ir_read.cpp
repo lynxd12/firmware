@@ -59,7 +59,8 @@ bool quickloop = false;
 
 void IrRead::setup() {
     irrecv.enableIRIn();
-
+bruceConfigPins.irRx = 25;
+    
 #ifdef USE_BOOST /// ENABLE 5V OUTPUT
     PPM.enableOTG();
 #endif
